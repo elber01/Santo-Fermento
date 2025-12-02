@@ -1,7 +1,7 @@
 body    {
 
 font-family: "Open Sans", Arial, sans-serif;
-
+}
 .logo-div{
     display: flex;
     justify-content: flex-start;
@@ -34,6 +34,25 @@ font-family: "Open Sans", Arial, sans-serif;
 
 }
 .navbar a {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.foot {
+    display: flex;
+    background-color: #333;
+     justify-content: space-evenly;
+     align-items: center;
+    overflow: hidden;
+    height: 60px;
+}
+
+.foot p {
     display: flex;
     font-size: 20px;
     font-weight: bold;
