@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="cuerpo">
        <div class="logo-div">
         <!--h1 class="logo">SF</h1-->
         <img src="santo2.svg" alt="" class="logo">
@@ -20,27 +20,39 @@
     </div>
 
     <h1>Siempre tratamos de escuchar tus sugerancias</h1>
-    <div class="form">
-        <fieldset>
+<div class="container-form">
+ <form action="#" method="POST" class="form">
+    <fieldset>
         <legend>Sugerencias</legend>
-        <div class="formulario">
-            <label for="">Nombre</label>
-            <input type="text" name="" id="nombre" placeholder="Escribe tu nombre">
+
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
         </div>
-           <div>
-            <label for="">Email</label>
-            <input type="text" name="" id="email" placeholder="Compartenos tu correo">
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Compartenos tu correo">
         </div>
-           <div>
-            <input type="checkbox" name="" id="check">
-            <label for="">Acepto enviar mis datos</label>
+
+        <div class="form-group">
+            <label for="texto">Tu Sugerencia</label>
+            <textarea name="sugerencia" id="texto" placeholder="Escribe aquí tu sugerencia..."></textarea>
         </div>
-        <div><textarea name="" id="texto"></textarea></div>
-        <div><button class="boton">Enviar</button></div>
+        
+        <div class="form-checkbox">
+            <input type="checkbox" name="acepto_datos" id="check" required>
+            <label for="check">Acepto enviar mis datos</label>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="boton">Enviar Sugerencia</button>
+        </div>
 
     </fieldset>
-    </div>
-    
+</form>
+</div>
+   
     
                 <footer class="foot">
                     <p>© 2025 Santo Fermento SRL. Derechos Reservados.</p>

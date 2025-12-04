@@ -88,7 +88,17 @@ font-family: "Open Sans", Arial, sans-serif;
     padding: 14px 16px;
     text-decoration: none;
 }
-
+legend {
+    font-size: 1.5em; /* Tamaño más grande y legible */
+    font-weight: bold;
+    background-color: #DC143C; /* Rojo Fuerte */
+    color: white; /* Texto blanco para contraste */
+    padding: 8px 15px; /* Más padding para que se vea mejor */
+    border-radius: 8px;
+    margin-bottom: 20px; /* Espacio debajo del título */
+    width: auto; /* Ajusta el ancho al contenido */
+}
+/*
 legend{
     font-size: 20px;
     font-weight: bold;
@@ -96,6 +106,7 @@ legend{
     padding: 5px;
     border-radius: 6px;
 }
+    
 .form{
     display: flex;
     justify-content: center;
@@ -106,8 +117,40 @@ fieldset{
      width: 200px;
      margin: 10px;
    }
+*/
+.container-form{
+    display: flex;
+    justify-content: center;
+}
+.form {
+    width: 100%;
+    max-width: 500px; /* Limita el ancho máximo del formulario */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    border-radius: 10px;
+}
 
-label{
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+}
+.form-group {
+    margin-bottom: 20px; /* Espacio entre grupos de campos */
+    display: flex;
+    flex-direction: column; /* Apila etiqueta e input */
+}
+
+/* --- Estilos de Etiquetas --- */
+label {
+    font-size: 1em;
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
+    font-weight: 600;
+    color: #333;
+}
+/*label{
    
     font-size: 18px;
   margin-left:5ox;
@@ -117,24 +160,51 @@ label{
         border-radius: 5px;
         padding: 7px;
         width: 90%;
+}*/
+#texto {
+    min-height: 150px; /* Altura más adecuada para sugerencias */
+    resize: vertical; /* Solo permite redimensionar verticalmente */
 }
+.form-checkbox {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el checkbox y la etiqueta */
+}
+/*
 .check {
     margin-top:5px;
     padding: 7px;
 }
-
+*/
+/*
 #texto {
     width: 400px;
     height: 200px;
      border-radius: 6px;
-}
-.boton{
+}*/
+/*.boton{
     background-color:#DC143C ;
     font-size: 18px;
  padding: 5px;
     border-radius: 6px;
     width: 100px;
     align-self: flex-end ;
+}*/
+.boton {
+    background-color: #DC143C; /* Color de Marca */
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%; /* Hace que el botón ocupe todo el ancho */
+    transition: background-color 0.3s ease; /* Transición para el efecto hover */
+}
+
+.boton:hover {
+    background-color: #b30f2f; /* Oscurece al pasar el mouse */
 }
 .orden{
     display: flex;
@@ -161,4 +231,24 @@ font-weight: bold;
       width: 350px;
     height: 310px ;
     border-radius: 8px;
+}
+
+.brands {
+ display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
+  gap: 20px; /* Espacio entre elementos */
+ padding-bottom:10px ;
+   
+}
+.marcas img {
+  width: 100%;
+  height: auto;
+  display: block;
+   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .brands {
+    grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
+  }
 }
