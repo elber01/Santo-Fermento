@@ -173,3 +173,29 @@ label{
     width: 100px;
     align-self: flex-end ;
 }
+.orden{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lista{
+    background-color:#DC143C;
+    width: 350px;
+    height: 300px;
+    padding: 5px;
+border-radius: 8px;
+font-weight: bold;
+}
+
+.lista li{
+    font-size: 20px;
+    color:white;
+}
+
+.product{
+    margin-left: 10px;
+      width: 350px;
+    height: 310px ;
+    border-radius: 8px;
+}
