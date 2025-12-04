@@ -42,71 +42,34 @@ font-family: "Open Sans", Arial, sans-serif;
     padding: 14px 16px;
     text-decoration: none;
 }
-.historia{
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.histopa{
-  max-width: 400px;
-  border: 2px solid black;
-    max-height: 400px ;
-     width: 400px ;
-     border-radius: 6px;
-     padding: 10px;
-     margin: 10px;
+.container{
+ display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
+  gap: 20px; /* Espacio entre elementos */
+ padding-bottom:10px ;
 }
 
-.masa img{
-     
-    border-radius: 6px;
-    max-width: 400px;
-    height: 400px ;
-     border: 2px solid black;
-
-}
-.nombre{
-   display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap; 
-      
-}
-.nombrepa{
-      max-width: 400px;
-  border: 2px solid black;
-    max-height: 400px ;
-     width: 400px ;
-     border-radius: 6px;
-     padding: 10px;
- margin: 10px;
-}
-.queso img{
-    border-radius: 6px;
-    max-width: 400px;
-    height: 400px ;
-     border: 2px solid black;  
-}
-.valor{
-      display:flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-}
-.valorpa{
-          max-width: 400px;
-  border: 2px solid black;
-    max-height: 400px ;
-     width: 400px ;
-     border-radius: 6px;
-     padding: 10px;
-      margin: 10px;
-}
-.yogurt img{
-     border-radius: 6px;
-    max-width: 400px;
-    height: 400px ;
-     border: 2px solid black; 
+.item {
+  /* Estilos para los elementos del grid */
+  padding: 10px;
+  border: 1px solid #ccc;
+  align-content: center;
+  border-radius: 5px;
+   
 }
 
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+   border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
+  }
+}
 .foot {
     display: flex;
     background-color: #333;
