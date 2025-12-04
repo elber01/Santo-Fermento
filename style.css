@@ -7,7 +7,7 @@ font-family: "Open Sans", Arial, sans-serif;
     justify-content: flex-start;
     background-color:#DC143C; 
     align-items: center;
-  
+  width: 100%;
 }
 .logo{
     /*fill: #DC143C;*/
@@ -31,6 +31,7 @@ font-family: "Open Sans", Arial, sans-serif;
      align-items: center;
     overflow: hidden;
     height: 60px;
+     width: 100%;
 
 }
 .navbar a {
@@ -113,6 +114,7 @@ font-family: "Open Sans", Arial, sans-serif;
      align-items: center;
     overflow: hidden;
     height: 60px;
+      width: 100%;
 }
 
 .foot p {
@@ -122,4 +124,52 @@ font-family: "Open Sans", Arial, sans-serif;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#DC143C ;
+    padding: 5px;
+    border-radius: 6px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+fieldset{
+     border-radius: 6px;
+     height: 380px;
+     width: 200px;
+     margin: 10px;
+   }
+
+label{
+   
+    font-size: 18px;
+  margin-left:5ox;
+}
+
+.formulario, #nombre, #email{
+        border-radius: 5px;
+        padding: 7px;
+        width: 90%;
+}
+.check {
+    margin-top:5px;
+    padding: 7px;
+}
+
+#texto {
+    width: 400px;
+    height: 200px;
+     border-radius: 6px;
+}
+.boton{
+    background-color:#DC143C ;
+    font-size: 18px;
+ padding: 5px;
+    border-radius: 6px;
+    width: 100px;
+    align-self: flex-end ;
 }
