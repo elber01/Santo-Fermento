@@ -65,6 +65,7 @@ font-family: "Open Sans", Arial, sans-serif;
   display: block;
    border-radius: 5px;
 }
+
 @media (max-width: 768px) {
   .container {
     grid-template-columns: repeat(1, 1fr); /* 1 columna en móviles */
@@ -88,15 +89,16 @@ font-family: "Open Sans", Arial, sans-serif;
     padding: 14px 16px;
     text-decoration: none;
 }
-legend {
-    font-size: 1.5em; /* Tamaño más grande y legible */
+
+.form legend {
+    font-size: 1.5em;
     font-weight: bold;
-    background-color: #DC143C; /* Rojo Fuerte */
-    color: white; /* Texto blanco para contraste */
-    padding: 8px 15px; /* Más padding para que se vea mejor */
+    background-color: #DC143C;
+    color: white;
+    padding: 8px 15px;
     border-radius: 8px;
-    margin-bottom: 20px; /* Espacio debajo del título */
-    width: auto; /* Ajusta el ancho al contenido */
+    margin-bottom: 20px;
+    width: auto;
 }
 /*
 legend{
@@ -118,10 +120,12 @@ fieldset{
      margin: 10px;
    }
 */
+
 .container-form{
     display: flex;
     justify-content: center;
 }
+
 .form {
     width: 100%;
     max-width: 500px; /* Limita el ancho máximo del formulario */
@@ -131,12 +135,13 @@ fieldset{
     border-radius: 10px;
 }
 
-fieldset {
+.form fieldset {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
     margin: 0;
 }
+
 .form-group {
     margin-bottom: 20px; /* Espacio entre grupos de campos */
     display: flex;
@@ -144,7 +149,7 @@ fieldset {
 }
 
 /* --- Estilos de Etiquetas --- */
-label {
+.form label {
     font-size: 1em;
     margin-bottom: 5px; /* Espacio entre la etiqueta y el input */
     font-weight: 600;
